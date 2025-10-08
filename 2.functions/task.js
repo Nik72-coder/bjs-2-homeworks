@@ -1,5 +1,4 @@
 function getArrayParams(...arr) {
-   if (arr.length != 0) {
       min = arr[0];
       max = arr[0];
       average = 0;
@@ -16,7 +15,6 @@ function getArrayParams(...arr) {
       average = Number((sum / j).toFixed(2))
       console.log(arr)
       return {min: `${min}`, max: `${max}`, Сумма: `${sum}`, Среднее: `${average}`}
-  }
 }
 let array1 = [4, 9, 8, 4865, 45, 2, 124, 215]
 getArrayParams(array1);
@@ -36,21 +34,20 @@ let array2 = [657, 878, 245, 545, 4, 8, 245, 17];
 summElementsWorker(array2)
 
 
-function differenceMaxMinWorker(array) {
-  if (array.length != 0) {
-      min = array[0];
-      max = array[0];
+function differenceMaxMinWorker(arr) {
+  if (arr.length != 0) {
+      min = arr[0];
+      max = arr[0];
       average = 0;
-      for (let i = 0; i < array.length; i++) {
-        if (min > array[i]) {
-          min = array[i];
+      for (let i = 0; i < arr.length; i++) {
+        if (min > arr[i]) {
+          min = arr[i];
         };
-        if (max < array[i]) {
-          max = array[i];
+        if (max < arr[i]) {
+          max = arr[i];
         }
       } 
-  } 
-  console.log('Массив: ', arr);
+  }
   return max - min;
 
 }
@@ -59,38 +56,36 @@ differenceMaxMinWorker(array3)
 
 
 
-function differenceEvenOddWorker(array) {
-  if (array.length != 0) {
+function differenceEvenOddWorker(arr) {
+  if (arr.length != 0) {
       let sumEvenElement = 0;
       let sumOddElement = 0;
-      for (let i = 0; i < array.length; i++) {
-        if (array[i] % 2 === 0) {
-          sumEvenElement += array[i];
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+          sumEvenElement += arr[i];
         } else {
-          sumOddElement += array[i];
+          sumOddElement += arr[i];
         }
       }
       return Math.abs(sumEvenElement - sumOddElement);
-  } 
-  console.log('Массив: ', arr);
+  }
   return max - min;
 }
 let array4 = [36, 283, 5, 78, 79, 576, 12, 546];
 differenceEvenOddWorker(array4);
 
 
-function averageEvenElementsWorker(array) {
-  if (array.length != 0) {
+function averageEvenElementsWorker(arr) {
+  if (arr.length != 0) {
     let sumEvenElement = 0;
-      let countEvenElement = 0;
-      for (let i = 0; i < array.length; i += 1) {
-      if (array[i] % 2 === 0) {
-          sumEvenElement += array[i];
+    let countEvenElement = 0;
+    for (let i = 0; i < arr.length; i += 1) {
+      if (arr[i] % 2 === 0) {
+          sumEvenElement += arr[i];
           countEvenElement += 1;
         }
       }
-    } 
-    console.log('Массив: ', arr);
+    }
     return sumEvenElement / countEvenElement;
 } 
 let array5 = [78, 6835, 154, 5, 876, 243, 54, 7854]
