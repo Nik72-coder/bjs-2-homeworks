@@ -1,11 +1,11 @@
 
 
-let messages = [
-  ["zloy-zloy", "Мы с Алешей сегодня на иксбоксе рубились, потом в маке поели, потом ему новый телефон купили, и два часа с горок в Нескучном саду катались."],
-  ["zloy-zloy", "У Алеши завтра день рождения."],
-  ["zloy-zloy", "Он мой дед. Ему будет 81 год."],
-  ["Вы", "LOL"]
-];
+// let messages = [
+//   ["zloy-zloy", "Мы с Алешей сегодня на иксбоксе рубились, потом в маке поели, потом ему новый телефон купили, и два часа с горок в Нескучном саду катались."],
+//   ["zloy-zloy", "У Алеши завтра день рождения."],
+//   ["zloy-zloy", "Он мой дед. Ему будет 81 год."],
+//   ["Вы", "LOL"]
+// ];
 
 let newMessages = [];
 
@@ -25,15 +25,15 @@ let newMessages = [];
 // newMessages[3].author = messages[3][0];
 // newMessages[3].text = messages[3][1];
 
-for(let i = 0; i < messages.length; i++) {
-  for(let j = 0; j < messages[i].length - 1; j++) {
-    newMessages[i] = {};
-    newMessages[i].author = messages[i][j];
-    newMessages[i].text = messages[i][j + 1];
-  };
+// for(let i = 0; i < messages.length; i++) {
+//   for(let j = 0; j < messages[i].length - 1; j++) {
+//     newMessages[i] = {};
+//     newMessages[i].author = messages[i][j];
+//     newMessages[i].text = messages[i][j + 1];
+//   };
   
-};
-console.log('newMessages - ', newMessages);
+// };
+// console.log('newMessages - ', newMessages);
 
 // const now = new Date();
 // let hours = String(now.getHours()).padStart(2, '0');
